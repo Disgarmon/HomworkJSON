@@ -14,6 +14,7 @@
 		9951F10A28A138EC001126B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9951F10928A138EC001126B0 /* Assets.xcassets */; };
 		9951F10D28A138EC001126B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9951F10B28A138EC001126B0 /* LaunchScreen.storyboard */; };
 		9951F11A28A2D412001126B0 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951F11928A2D412001126B0 /* Predict.swift */; };
+		99782BC928A67A9500C7927F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782BC828A67A9400C7927F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9951F10C28A138EC001126B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9951F10E28A138EC001126B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9951F11928A2D412001126B0 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
+		99782BC828A67A9400C7927F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9951F10428A138EB001126B0 /* MainViewController.swift */,
+				99782BC828A67A9400C7927F /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				9951F10528A138EB001126B0 /* MainViewController.swift in Sources */,
 				9951F10128A138EB001126B0 /* AppDelegate.swift in Sources */,
 				9951F10328A138EB001126B0 /* SceneDelegate.swift in Sources */,
+				99782BC928A67A9500C7927F /* SettingsViewController.swift in Sources */,
 				9951F11A28A2D412001126B0 /* Predict.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

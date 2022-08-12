@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDI-mN-12k">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,20 +8,120 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Enjoy Dogs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HomworkJSON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-0k-HOV">
+                                <rect key="frame" x="93" y="477" width="134.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Random Dog"/>
+                                <connections>
+                                    <action selector="getRandomDogButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPl-I2-x7a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-5m-EsT">
+                                <rect key="frame" x="16" y="131.5" width="288" height="325.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed of dogs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-cR-1w8">
+                                <rect key="frame" x="16" y="101" width="112" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azG-4i-PzX">
+                                <rect key="frame" x="144" y="101" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4cF-cR-1w8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5li-qO-EQS"/>
+                            <constraint firstItem="hXN-0k-HOV" firstAttribute="top" secondItem="GrE-5m-EsT" secondAttribute="bottom" constant="20" id="BJz-0K-ohi"/>
+                            <constraint firstItem="azG-4i-PzX" firstAttribute="leading" secondItem="4cF-cR-1w8" secondAttribute="trailing" constant="16" id="GeM-as-nGi"/>
+                            <constraint firstItem="GrE-5m-EsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="P7j-SF-6JO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GrE-5m-EsT" secondAttribute="trailing" constant="16" id="UIo-BL-M7o"/>
+                            <constraint firstItem="hXN-0k-HOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wnw-MA-MAT"/>
+                            <constraint firstItem="4cF-cR-1w8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fks-9A-Pkn"/>
+                            <constraint firstAttribute="bottom" secondItem="hXN-0k-HOV" secondAttribute="bottom" constant="60" id="q2P-iA-I4x"/>
+                            <constraint firstItem="azG-4i-PzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="qy7-Gj-rmg"/>
+                            <constraint firstItem="GrE-5m-EsT" firstAttribute="top" secondItem="4cF-cR-1w8" secondAttribute="bottom" constant="10" id="rUA-nn-aGT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Enjoy Dogs" leftItemsSupplementBackButton="YES" id="Kbj-xM-oM2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KQc-CE-neV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="OBf-uD-w10">
+                            <connections>
+                                <segue destination="zks-ay-HEE" kind="show" id="OVN-EM-y3l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="breedLabel" destination="azG-4i-PzX" id="9Ru-sO-7bQ"/>
+                        <outlet property="dogImageView" destination="GrE-5m-EsT" id="Jek-4w-DLF"/>
+                        <outlet property="randomDogButton" destination="hXN-0k-HOV" id="9so-Ch-KRC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="80"/>
+            <point key="canvasLocation" x="498.75" y="79.225352112676063"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N34-XD-caQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xDI-mN-12k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ecF-oQ-LUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vi7-LA-zAF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utK-EF-eSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PV2-1p-ti2">
+            <objects>
+                <viewController id="zks-ay-HEE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ljg-bf-1Rr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9Z-Gn-nrE">
+                                <rect key="frame" x="0.0" y="176" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oNw-fB-R5h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L9Z-Gn-nrE" firstAttribute="centerY" secondItem="Ljg-bf-1Rr" secondAttribute="centerY" id="Ehu-o2-0kq"/>
+                            <constraint firstItem="L9Z-Gn-nrE" firstAttribute="centerX" secondItem="Ljg-bf-1Rr" secondAttribute="centerX" id="I0s-uq-Zkk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UYd-sp-14y">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="z0J-aY-HzH"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAL-S2-aTj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="80"/>
         </scene>
     </scenes>
     <resources>
