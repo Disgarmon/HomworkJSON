@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let settingsVS = segue.destination as? SettingsViewController else { return }
+        settingsVS.breedLabel = breedLabel.text
         
     }
     
